@@ -1,0 +1,147 @@
+#container {
+}
+.title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  align-items: flex-end;
+  margin-top: 8px;
+  display: flex;
+
+  .img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    img{
+      margin-right: 8px;
+    }
+  }
+
+  span{
+    font-size: 22px;
+  }
+  ion-button{
+    display: block;
+    --box-shadow:none;
+    icon-header{
+      color: white !important;
+    }
+  }
+}
+.toolbar{
+  --min-height: 100px;
+}
+.toolbar-footer{
+  ion-slide{
+    .container{
+      width: 100%;
+      height: 100px;
+      background: var( --ion-color-primary-tint);
+      padding: 10px;
+      margin: 0 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px;
+
+      margin-bottom: 5px;
+      ion-icon{
+        font-size: 24px;
+      }
+      span{
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.content-geral{
+  .background{
+    .bank-information{
+      .qrcode{
+        width: 100px;
+        margin: 10px auto;
+        display: block;
+      }
+
+      span{
+        margin: 5px 0;
+        font-size: 14px;
+        display: block;
+      }
+    }
+    ion-list{
+      margin-top: 32px;
+      background: transparent;
+
+      ion-item{
+        color: white;
+        --background: transparent;
+        --detail-icon-opacity: 1; 
+        .icon-content{
+          color: white;
+        }
+        &:first-of-type{
+          border-top: 0.55px solid rgba($color: #ffffff, $alpha: 0.7);
+        }
+      }
+    }
+    .logout{
+      margin-top: 32px;
+      margin-bottom: 100px;
+    }
+  }
+  .blocks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow-y: scroll;
+
+    &.fixed{
+      position: fixed;
+      top: 110px;
+      overflow-y: hidden;
+    }
+    ion-card{
+      .cash{
+        span{
+          &.value{
+            font-size: 30px;
+            display: block;
+          }
+          &.blue{
+            color: #0ab9cd;
+          }
+
+          &.green{
+          color:  #0eaa1bbb;
+          }
+
+        }
+      }
+      .footer{
+        background-color: #f4f5f8;
+      }
+      .title{
+        display: block;
+        font-size: 20px;
+        margin-top: 55px;
+        height: 40px;
+      }
+      .gift{
+        font-size: 30px;
+      }
+      .text{
+        margin-top: 35px;
+      }
+    }
+  }
+}
